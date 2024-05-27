@@ -1,5 +1,5 @@
 import "./hamburger.css";
-
+import { Link } from "react-router-dom";
 const Hamburger = () => {
     return (
         <nav class="menu--left" role="navigation">
@@ -9,10 +9,10 @@ const Hamburger = () => {
       <span></span>
       <span></span>
       <ul class="menuItem">
-        <li><a href="#">Hem</a></li>
-        <li><a href="#">Om oss</a></li>
-        <li><a href="#">Meny</a></li>
-        <li><a href="#">Kontakt</a></li>
+        <li><Link to="/"> Startsida </Link></li>
+        <li><Link to ='/omoss'> Om oss</Link></li>
+        <li><Link to ="/meny">Meny</Link></li>
+        <li><Link to ="/kontakt">Kontakt</Link></li>
       </ul>
     </div>
   </nav>
