@@ -21,7 +21,6 @@
     width: 40px;
     height: 32px;
     position: absolute;
-    top: -7px;
     cursor: pointer;
     opacity: 0; /* hide this */
     z-index: 2; /* and place it over the hamburger */
@@ -76,12 +75,12 @@
   width: 300px;
   padding: 50px;
   top: 50px;
-  padding-top: 125px;
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  border: 2px solid #000000;
   li {
     padding: 10px 0;
     font-size: 22px;
@@ -92,7 +91,7 @@
   position: relative;
   width: 50%;
   .menuToggle {
-    left: 0;
+    left: 10px;
     input {
       left: 50px;
     }
@@ -102,175 +101,8 @@
   }
   .menuItem {
     left: 50px;
-    margin: -100px 0 0 -50px;
+    margin: 10px 0 0 -100px;
     transform: translate(-100%, 0);
-  }
-}
-
-.menu--right {
-  .menuToggle {
-    position: fixed;
-    right: 0;
-    input {
-      right: 50px;
-    }
-    span {
-      right: 50px;
-    }
-  }
-  .menuItem {
-    right: 0;
-    margin: -100px 0 0 0;
-    transform: translate(100%, 0);
-    li {
-      a {
-        &:hover {
-          padding-left: 5px;
-        }
-      }
-    }
-  }
-}
-
-.menu--bottom--right {
-  .menuToggle {
-    position: fixed;
-    top: auto;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    input {
-      right: 50px;
-      bottom: 50px;
-      top: auto;
-      &:checked ~ .menuItem {
-        transform: scale(1);
-        li {
-          &:nth-child(1) {
-            -webkit-animation: text-slide-in .2s;
-            -moz-animation: text-slide-in .2s;
-            animation: text-slide-in .2s;
-          }
-          &:nth-child(2) {
-            -webkit-animation: text-slide-in .3s;
-            -moz-animation: text-slide-in .3s;
-            animation: text-slide-in .3s;
-          }
-          &:nth-child(3) {
-            -webkit-animation: text-slide-in .4s;
-            -moz-animation: text-slide-in .4s;
-            animation: text-slide-in .4s;
-          }
-          &:nth-child(4) {
-            -webkit-animation: text-slide-in .5s;
-            -moz-animation: text-slide-in .5s;
-            animation: text-slide-in .5s;
-          }
-          &:nth-child(5) {
-            -webkit-animation: text-slide-in .6s;
-            -moz-animation: text-slide-in .6s;
-            animation: text-slide-in .6s;
-          }
-        }
-      }
-    }
-    span {
-      right: 50px;
-      bottom: 50px;
-      top: auto;
-    }
-  }
-  .menuItem {
-    bottom: 0;
-    right: 0;
-    margin: 0;
-    padding-top: 50px;
-    padding-bottom: 125px;
-    transform-origin: bottom right;
-    transform: scale(0);
-    -webkit-transition: -webkit-transform .3s,visibility 0s 0s;
-    -moz-transition: -moz-transform .3s,visibility 0s 0s;
-    transition: transform .3s,visibility 0s 0s;
-    li {
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      a {
-        &:hover {
-          padding-left: 5px;
-        }
-      }
-    }
-  }
-}
-
-.menu--bottom--left {
-  .menuToggle {
-    position: fixed;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    input {
-      left: 50px;
-      bottom: 50px;
-      top: auto;
-      &:checked ~ .menuItem {
-        transform: scale(1);
-        li {
-          &:nth-child(1) {
-            -webkit-animation: text-slide-in .2s;
-            -moz-animation: text-slide-in .2s;
-            animation: text-slide-in .2s;
-          }
-          &:nth-child(2) {
-            -webkit-animation: text-slide-in .3s;
-            -moz-animation: text-slide-in .3s;
-            animation: text-slide-in .3s;
-          }
-          &:nth-child(3) {
-            -webkit-animation: text-slide-in .4s;
-            -moz-animation: text-slide-in .4s;
-            animation: text-slide-in .4s;
-          }
-          &:nth-child(4) {
-            -webkit-animation: text-slide-in .5s;
-            -moz-animation: text-slide-in .5s;
-            animation: text-slide-in .5s;
-          }
-          &:nth-child(5) {
-            -webkit-animation: text-slide-in .6s;
-            -moz-animation: text-slide-in .6s;
-            animation: text-slide-in .6s;
-          }
-        }
-      }
-    }
-    span {
-      left: 50px;
-      bottom: 50px;
-      top: auto;
-    }
-  }
-  .menuItem {
-    bottom: 0;
-    left: 0;
-    margin: 0;
-    padding-top: 50px;
-    padding-bottom: 125px;
-    transform-origin: bottom left;
-    transform: scale(0);
-    -webkit-transition: -webkit-transform .3s,visibility 0s 0s;
-    -moz-transition: -moz-transform .3s,visibility 0s 0s;
-    transition: transform .3s,visibility 0s 0s;
-    li {
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      a {
-        &:hover {
-          padding-left: 5px;
-        }
-      }
-    }
   }
 }
 
