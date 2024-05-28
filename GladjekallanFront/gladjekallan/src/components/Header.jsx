@@ -6,8 +6,10 @@ import "./header.css"
 const Header = () => {
     return (
         <div className="header-container">
-            <Hamburger />
+        <Hamburger />
+        <div className="header-title">
         <h1>Gladjekällan</h1>
+        </div>
         </div>
     );
 }
