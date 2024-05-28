@@ -13,7 +13,7 @@
     color: #232323;
     transition: all 0.3s ease;
     &:hover {
-      color: tomato;
+      color: rgb(95, 28, 16);
     }
   }
   input {

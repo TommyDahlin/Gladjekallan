@@ -1,6 +1,18 @@
 .startpage-container{
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+.family-image {
+    max-width: 25%;
+    align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+    .family-image {
+        max-width: 75%;
+    }
+    
 }

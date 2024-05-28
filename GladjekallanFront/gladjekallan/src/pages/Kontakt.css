@@ -1,0 +1,13 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    margin-top: 0;
+  }
+  
+}

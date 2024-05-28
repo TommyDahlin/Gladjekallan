@@ -8,7 +8,7 @@ const Header = () => {
         <div className="header-container">
         <Hamburger />
         <div className="header-title">
-        <h1>Gladjekällan</h1>
+        <h1>Gladjekällans Foodtruck</h1>
         </div>
         </div>
     );
