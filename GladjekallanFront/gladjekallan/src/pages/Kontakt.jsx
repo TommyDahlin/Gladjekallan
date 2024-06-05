@@ -12,8 +12,8 @@ const Kontakt = () => {
             <p>Email: niclas@slakthusetskottbod.se</p>
             <p><br/>Vi får vårat kött från Slakthusets Köttbod i Olskroken.</p>
             <p>Telefon: 0735141011</p>
-            <p>Borgaregatan 19, 416 66 Göteborg</p>
-            <p>Öppettider: 
+            <p>Borgaregatan 19, 416 66 Göteborg </p>
+            <p><br/>Öppettider: 
                 <br/>Måndag-Fredag: 9-18 
                 <br/> Lördag: 9-14 
                 <br/> Söndag: Stängt
