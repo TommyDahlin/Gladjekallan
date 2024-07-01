@@ -101,8 +101,8 @@
   }
   .menuItem {
     left: 50px;
-    margin: 10px 0 0 -100px;
-    transform: translate(-100%, 0);
+    margin: 15px 0 0 -50px;
+    transform: translate(-110%, 0);
   }
 }
 

@@ -12,7 +12,7 @@ const Hamburger = () => {
         <li><Link to="/"> Startsida </Link></li>
         <li><Link to ='/omoss'> Om oss</Link></li>
         <li><Link to ="/meny">Meny</Link></li>
-        <li><Link to ="/kontakt">Kontakt</Link></li>
+        <li><Link to ="/kontakt">Kontakt / Events</Link></li>
       </ul>
     </div>
   </nav>
